@@ -1,32 +1,58 @@
-# React + TypeScript + Vite
+☀️ Solarium Resort
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicação web fullstack desenvolvida para o Solarium Resort, um resort de luxo à beira-mar. O projeto conta com uma interface moderna e responsiva, utilizando tecnologias de ponta para garantir performance, componentização limpa e ótima experiência de usuário.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🛠️ Tecnologias Utilizadas
 
-## React Compiler
+Este projeto foi construído utilizando as seguintes tecnologias e ferramentas:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React (com Vite)
+* TypeScript
+* Tailwind CSS (para estilização rápida e responsiva)
+* React Router DOM (para gerenciamento de rotas)
+* TanStack Query (React Query) (para gerenciamento de requisições e estado assíncrono)
 
-## Expanding the Oxlint configuration
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+📂 Estrutura do Projeto
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+```text
+solarium-resort/
+├── src/
+│   ├── assets/             # Imagens e ícones estáticos
+│   ├── components/         # Componentes reutilizáveis (Header, Footer, etc.)
+│   ├── pages/              # Páginas principais da aplicação (Home)
+│   ├── services/           # Integrações de API e queries do TanStack Query
+│   ├── App.tsx             # Configuração de rotas e providers
+│   ├── main.tsx            # Ponto de entrada da aplicação
+│   └── index.css           # Estilos globais e diretivas do Tailwind
+├── tailwind.config.js      # Configuração de temas e cores do Tailwind
+└── package.json            # Dependências e scripts do projeto
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+
+⚙️ Como Executar o Projeto Localmente
+Siga os passos abaixo para rodar o projeto na sua máquina:
+
+1. Clone o repositório:
+git clone [https://github.com/Amanda-Correa2003/Solarium-Resort.git](https://github.com/Amanda-Correa2003/Solarium-Resort.git)
+
+2. Entre na pasta do projeto:
+cd Solarium-Resort
+
+3. Instale as dependências:
+npm install
+
+4. Inicie o servidor de desenvolvimento:
+npm run dev
+
+5. Abra o link gerado no terminal (geralmente http://localhost:5173) no seu navegador.
+
+Próximos Passos do projeto!
+[ ] Integração completa com o Backend (API).
+[ ] Sistema de reservas em tempo real.
+[ ] Painel administrativo.
+
+Imagens
+
+<img width="2048" height="3184" alt="localhost_5173_(Nest Hub) (8)" src="https://github.com/user-attachments/assets/e6933601-aa1f-41fb-bb4d-860c2755f939" />
+
