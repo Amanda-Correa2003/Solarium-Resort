@@ -2,6 +2,10 @@
 
 Aplicação web fullstack desenvolvida para o Solarium Resort, um resort de luxo à beira-mar. O projeto conta com uma interface moderna e responsiva, utilizando tecnologias de ponta para garantir performance, componentização limpa e ótima experiência de usuário.
 
+Imagens
+
+<img width="1440" height="2238" alt="Notes_260804_002941_f20" src="https://github.com/user-attachments/assets/b3e93a78-e43f-4066-82e7-d7fbe1736a91" />
+
 
 🛠️ Tecnologias Utilizadas
 
@@ -52,6 +56,3 @@ Próximos Passos do projeto!
 [ ] Sistema de reservas em tempo real.
 [ ] Painel administrativo.
 
-Imagens
-
-<img width="2048" height="3184" alt="localhost_5173_(Nest Hub) (8)" src="https://github.com/user-attachments/assets/2789b2f6-5f44-4331-a6ba-fe4a2438df7b" />
