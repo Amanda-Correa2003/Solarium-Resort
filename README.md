@@ -54,5 +54,5 @@ Próximos Passos do projeto!
 
 Imagens
 
-<img width="2048" height="3184" alt="localhost_5173_(Nest Hub) (8)" src="https://github.com/user-attachments/assets/38a6b223-813c-495d-84bb-b755f18ba76b" />
+<img width="2048" height="3184" alt="localhost_5173_(Nest Hub) (8)" src="https://github.com/user-attachments/assets/7332edf1-4ab5-4d41-9115-7350afec1cb4" />
 
