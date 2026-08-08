@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { usePromotions } from '../services/queries';
-import { SunMedium, Gift, Sparkles } from 'lucide-react';
-
+import { ChevronLeft, ChevronRight, SunMedium, Gift, Sparkles } from 'lucide-react';
 
 export function Home() {
   const { data: promos } = usePromotions();
@@ -12,6 +11,37 @@ export function Home() {
     e.preventDefault();
     alert(`Obrigado, ${nome}! Cadastrado com sucesso.`);
   };
+
+  const resortImages = [
+  {
+    url: "https://plus.unsplash.com/premium_photo-1687960116497-0dc41e1808a2?w=500&auto=format&fit=crop&q=60",
+    alt: "Restaurante"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?w=500&auto=format&fit=crop&q=60",
+    alt: "Resort imagem piscina"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
+    alt: "Resort Vista"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&auto=format&fit=crop&q=60",
+    alt: "Quarto do Resort"
+  }
+];
+
+const [currentIndex, setCurrentIndex] = useState(0);
+
+const nextSlide = () => {
+  setCurrentIndex((prev) => (prev + 3 >= resortImages.length ? 0 : prev + 1));
+};
+
+const prevSlide = () => {
+  setCurrentIndex((prev) => (prev === 0 ? Math.max(0, resortImages.length - 3) : prev - 1));
+};
+
+const visibleImages = resortImages.slice(currentIndex, currentIndex + 3);
 
   return (
     <div className="bg-[#0a4b77] min-h-screen text-[#2c231b] font-sans relative">
@@ -159,13 +189,35 @@ export function Home() {
             <p className="font-medium text-sm">Lazer <br/> completo</p>
           </div>
         </div>
+         <div className="relative mt-12 px-14">
+  {/* Botão Esquerdo  */}
+  <button 
+    onClick={prevSlide}
+    className="absolute -left-4 md:-left-8 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg transition"
+  >
+    <ChevronLeft className="w-6 h-6" />
+  </button>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 relative items-center">
-          <img src="https://plus.unsplash.com/premium_photo-1687960116497-0dc41e1808a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVzb3J0fGVufDB8fDB8fHww" alt="Restaurante" className="rounded-xl shadow-md h-64 object-cover w-full" />
-         <img src="https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJlc29ydHxlbnwwfHwwfHx8MA%3D%3D" alt="resort imagem piscina" className="rounded-xl shadow-md h-64 object-cover w-full" />
-          <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80" alt="Resort Vista" className="rounded-xl shadow-md h-64 object-cover w-full" />
-        </div>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+    {visibleImages.map((image, index) => (
+      <img 
+        key={index} 
+        src={image.url} 
+        alt={image.alt} 
+        className="rounded-xl shadow-md h-64 gap-6  object-cover w-full transition-all duration-300" 
+      />
+    ))}
+  </div>
 
+  {/* Botão Direito */}
+  <button 
+    onClick={nextSlide}
+    className="absolute -right-4 md:-right-8 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg transition"
+  >
+    <ChevronRight className="w-6 h-6" />
+  </button>
+</div>
+     
       </section>
 
       {/* 5. NEWSLETTER & ASSISTENTE VIRTUAL */}
