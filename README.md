@@ -4,9 +4,10 @@ Aplicação web fullstack desenvolvida para o Solarium Resort, um resort de luxo
 
 Imagens
 
-<img width="2560" height="4550" alt="localhost_5173_(Nest Hub Max) (18)" src="https://github.com/user-attachments/assets/4dd78243-2f0e-4295-b8b7-a122ac5fa42f" />
+<img width="2560" height="4518" alt="localhost_5173_(Nest Hub Max) (19)" src="https://github.com/user-attachments/assets/3d845e74-6631-4162-817d-93a9b0aaa704" />
 
 
+<img width="2560" height="3774" alt="localhost_5173_quartos(Nest Hub Max)" src="https://github.com/user-attachments/assets/01a4c0aa-ff27-4d04-85af-53e26bf346cf" />
 
 
 
