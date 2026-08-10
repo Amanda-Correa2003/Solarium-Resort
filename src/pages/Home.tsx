@@ -151,8 +151,8 @@ export function Home() {
 
         {/* Onda de transição com a cor amarela (#f3d37a) */}
         <div className="relative z-10 w-full overflow-hidden leading-none">
-          <svg className="relative block w-full h-16 text-[#cf9b17]" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0 C150,90 350,-40 500,40 C650,120 900,20 1200,50 L1200,120 L0,120 Z" fill="#f3d37a"></path>
+          <svg className="relative block w-full h-16 text-[#b8870e]" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0 C150,90 350,-40 500,40 C650,120 900,20 1200,50 L1200,120 L0,120 Z" fill="#c79a29"></path>
           </svg>
         </div>
       </section>
@@ -232,7 +232,7 @@ export function Home() {
         <div className="max-w-6xl mx-auto text-center">
           <h3 className="text-3xl md:text-4xl font-serif font-bold text-[#f3d37a] mb-2">Benefícios do Resort</h3>
           <div className="flex justify-center items-center mb-12">
-            <span className="text-[#dba91e] text-sm"><path d="m16.9541 8.6624 2.1206-2.122 1.4147 1.4137-2.1206 2.122zM2 18h20v2H2zm9-14h2v3h-2zM3.5427 7.9249l1.4142-1.4142L7.0782 8.632 5.664 10.0462zM5 16h14c0-3.87-3.13-7-7-7s-7 3.13-7 7"></path></span>
+            <span className="text-[#dba91e] text-sm"></span>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
@@ -310,7 +310,7 @@ export function Home() {
       </section>
 
       {/* 5. NEWSLETTER & ASSISTENTE VIRTUAL */}
-      <section className="bg-[#f3d37a] py-12 px-6">
+      <section className="bg-[#c79a29] py-12 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           
           <div className="w-full md:w-2/3 text-left">
@@ -365,7 +365,7 @@ export function Home() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           
           <div className="flex items-center gap-3">
-            <div className="w-20 h-20 rounded-full bg-[#15218f] flex items-center justify-center shadow border-4 border-[#c0b412]">
+            <div className="w-20 h-20 rounded-full bg-[#d69c0a] flex items-center justify-center shadow border-4 border-[#c0b412]">
               <span className="text-4xl">☀️</span>
             </div>
             <div>
