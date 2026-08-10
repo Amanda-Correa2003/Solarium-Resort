@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { usePromotions } from '../services/queries';
 import { ChevronLeft, ChevronRight, SunMedium, Gift, Sparkles } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export function Home() {
   const { data: promos } = usePromotions();
   const [email, setEmail] = useState('');
   const [nome, setNome] = useState('');
+  const navigate = useNavigate();
 
   // Estados para os botões do filtro superior
   const [showChegada, setShowChegada] = useState(false);
@@ -118,9 +120,12 @@ export function Home() {
             </div>
           </button>
 
-          <button className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-6 py-2.5 rounded-full font-medium hover:brightness-105 transition shadow ml-2">
-            Pesquisar
-          </button>
+          <button 
+  onClick={() => navigate('/quartos')}
+  className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-6 py-2.5 rounded-full font-medium hover:brightness-105 transition shadow ml-2"
+>
+  Pesquisar
+</button>
         </div>
       </header>
 
@@ -144,9 +149,12 @@ export function Home() {
               Conforto, lazer e natureza em perfeita harmonia para você viver o extraordinário.
             </p>
           </div>
-          <button className="bg-gradient-to-r from-amber-500 to-amber-600 text-white font-medium px-8 py-3.5 rounded-xl shadow-xl hover:brightness-105 transition tracking-wide text-sm">
-            RESERVE AGORA →
-          </button>
+          <button 
+  onClick={() => navigate('/quartos')}
+  className="bg-gradient-to-r from-amber-500 to-amber-600 text-white font-medium px-8 py-3.5 rounded-xl shadow-xl hover:brightness-105 transition tracking-wide text-sm"
+>
+  RESERVE AGORA →
+</button>
         </div>
 
         {/* Onda de transição com a cor amarela (#f3d37a) */}
@@ -182,9 +190,12 @@ export function Home() {
                 <h4 className="font-serif font-bold text-xl text-[#1a2b4c] mb-1">Promoções de Verão</h4>
                 <p className="text-xs text-gray-500 leading-relaxed">Descontos especiais para a estação mais quente do ano.</p>
               </div>
-              <a href="#" className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase flex items-center gap-1 hover:gap-2 transition-all">
-                Ver ofertas →
-              </a>
+             <button 
+  onClick={() => navigate('/quartos?promo=verao')}
+  className="..."
+>
+  Ver ofertas
+</button>
             </div>
           </div>
 
@@ -200,9 +211,12 @@ export function Home() {
                 <h4 className="font-serif font-bold text-xl text-[#1a2b4c] mb-1">Promoções de Natal</h4>
                 <p className="text-xs text-gray-500 leading-relaxed">Celebre momentos mágicos com condições especiais.</p>
               </div>
-              <a href="#" className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase flex items-center gap-1 hover:gap-2 transition-all">
-                Ver ofertas →
-              </a>
+              <button 
+  onClick={() => navigate('/quartos?promo=natal')}
+  className="..."
+>
+  Ver ofertas
+</button>
             </div>
           </div>
 
@@ -218,9 +232,12 @@ export function Home() {
                 <h4 className="font-serif font-bold text-xl text-[#1a2b4c] mb-1">Promoções de Ano Novo</h4>
                 <p className="text-xs text-gray-500 leading-relaxed">Comece o novo ano em grande estilo com o Solarium Resort.</p>
               </div>
-              <a href="#" className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase flex items-center gap-1 hover:gap-2 transition-all">
-                Ver ofertas →
-              </a>
+              <button 
+  onClick={() => navigate('/quartos?promo=anonovo')}
+  className="..."
+>
+  Ver ofertas
+</button>
             </div>
           </div>
 
