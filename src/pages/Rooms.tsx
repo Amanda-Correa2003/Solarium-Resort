@@ -16,9 +16,9 @@ import {
   X
 } from 'lucide-react';
 
-// ==========================================
-// 1. DADOS MOCKADOS DOS QUARTOS (CATÁLOGO)
-// ==========================================
+
+// 1. DADOS MOCKADOS DOS QUARTOS 
+
 export interface Quarto {
   id: string;
   nome: string;
@@ -439,12 +439,17 @@ export function QuartosPage() {
               <ArrowLeft className="w-4 h-4 text-amber-600" /> Voltar para a Home
             </button>
 
-            {carrinho.length > 0 && (
-              <div className="bg-amber-600 text-white text-xs font-semibold px-4 py-2 rounded-full shadow flex items-center gap-2 animate-pulse">
-                <span>🛒 Carrinho de Reservas:</span>
-                <span className="bg-white text-amber-800 px-2 py-0.5 rounded-full font-bold">{carrinho.length} quarto(s) selecionado(s)</span>
-              </div>
-            )}
+           {carrinho.length > 0 && (
+  <button 
+    onClick={() => navigate('/carrinho')}
+    className="bg-amber-600 hover:bg-amber-700 text-white text-xs font-semibold px-4 py-2 rounded-full shadow transition flex items-center gap-2 cursor-pointer"
+  >
+    <span>🛒 Carrinho de Reservas:</span>
+    <span className="bg-white text-amber-800 px-2 py-0.5 rounded-full font-bold">
+      {carrinho.length} quarto(s) selecionado(s)
+    </span>
+  </button>
+)}
           </div>
 
           {/* Cabeçalho de Resultados e Critérios Ativos */}
@@ -617,7 +622,7 @@ export function QuartosPage() {
       </div>
 
       {/* ==========================================
-          FOOTER (Idêntico ao da Home)
+          FOOTER
          ========================================== */}
       <footer className="bg-[#EFEADB] py-12 px-4 border-t border-[#DED4BD] mt-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
