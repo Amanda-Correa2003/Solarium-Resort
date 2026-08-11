@@ -10,6 +10,9 @@ Imagens
 <img width="2560" height="3774" alt="localhost_5173_quartos(Nest Hub Max)" src="https://github.com/user-attachments/assets/01a4c0aa-ff27-4d04-85af-53e26bf346cf" />
 
 
+<img width="2560" height="3358" alt="localhost_5173_carrinho(Nest Hub Max)" src="https://github.com/user-attachments/assets/e0f79c0f-5b1f-46f5-b7c6-a2c05deca54c" />
+
+
 
 
 🛠️ Tecnologias Utilizadas
