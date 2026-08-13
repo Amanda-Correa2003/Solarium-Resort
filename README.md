@@ -19,6 +19,8 @@ Imagens
 
 <img width="2560" height="2440" alt="localhost_5173_carrinho(Nest Hub Max) (1)" src="https://github.com/user-attachments/assets/cd41a485-13d9-493a-82de-94ea7ac851f4" />
 
+mobile:
+<img width="750" height="8578" alt="localhost_5173_(iPhone SE) (4)" src="https://github.com/user-attachments/assets/ccabc94a-76fe-45c5-af30-7ea8d209f846" />
 
 
  Funcionalidades Principais
