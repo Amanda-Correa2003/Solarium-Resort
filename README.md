@@ -1,6 +1,11 @@
-☀️ Solarium Resort
+☀️ Solarium Resort — Sistema de Reservas
 
-Aplicação web fullstack desenvolvida para o Solarium Resort, um resort de luxo à beira-mar. O projeto conta com uma interface moderna e responsiva, utilizando tecnologias de ponta para garantir performance, componentização limpa e ótima experiência de usuário.
+Um sistema web completo, moderno e elegante para gerenciamento de reservas de um resort de alto padrão, desenvolvido com React, TypeScript e Tailwind CSS.
+
+Sobre o Projeto
+
+O Solarium Resort é uma aplicação front-end desenvolvida para simular a experiência de um hóspede buscando acomodações de luxo. O sistema permite navegar por quartos exclusivos, configurar o período de estadia, gerenciar hóspedes (com regras específicas de gratuidade para crianças) e simular um carrinho de compras para fechamento de reserva.
+
 
 Imagens
 
@@ -16,54 +21,78 @@ Imagens
 
 
 
+ Funcionalidades Principais
 
+* Home: Apresentação visual do resort com carrossel de imagens.
+* Catálogo de Quartos: Listagem detalhada das acomodações.
+* Carrinho de Reservas: Gerenciamento dos quartos selecionados.
+* Customização de Hóspedes: Seleção dinâmica de adultos e crianças por quarto.
+* Cálculo de Estadia: Atualização em tempo real baseada nas datas escolhidas.
+* Design Responsivo: Layout adaptado para mobile, tablet e desktop.
 
-🛠️ Tecnologias Utilizadas
+ Tecnologias Utilizadas
 
-Este projeto foi construído utilizando as seguintes tecnologias e ferramentas:
+* React (Hooks e Componentização)
+* TypeScript (Tipagem estática)
+* Tailwind CSS (Estilização responsiva)
+* React Router DOM (Navegação SPA)
+* Lucide React (Ícones)
 
-* React (com Vite)
-* TypeScript
-* Tailwind CSS (para estilização rápida e responsiva)
-* React Router DOM (para gerenciamento de rotas)
-* TanStack Query (React Query) (para gerenciamento de requisições e estado assíncrono)
-
-
-📂 Estrutura do Projeto
+## 📂 Arquitetura do Projeto
 
 ```text
-solarium-resort/
-├── src/
-│   ├── assets/             # Imagens e ícones estáticos
-│   ├── components/         # Componentes reutilizáveis (Header, Footer, etc.)
-│   ├── pages/              # Páginas principais da aplicação (Home)
-│   ├── services/           # Integrações de API e queries do TanStack Query
-│   ├── App.tsx             # Configuração de rotas e providers
-│   ├── main.tsx            # Ponto de entrada da aplicação
-│   └── index.css           # Estilos globais e diretivas do Tailwind
-├── tailwind.config.js      # Configuração de temas e cores do Tailwind
-└── package.json            # Dependências e scripts do projeto
+src/
+├── assets/          # Mídias estáticas
+├── components/      # Componentes reutilizáveis (Cards, Header, Footer)
+├── pages/           # Páginas da aplicação (Home, Carrinho, Rooms)
+├── App.tsx          # Rotas globais
+└── main.tsx         # Ponto de entrada
 
+```
 
-⚙️ Como Executar o Projeto Localmente
-Siga os passos abaixo para rodar o projeto na sua máquina:
+⚙️ Como Executar o Projeto Localmente?
+
+Pré-requisitos
+Certifique-se de ter o **Node.js** instalado.
+Passo a passo
 
 1. Clone o repositório:
-git clone [https://github.com/Amanda-Correa2003/Solarium-Resort.git](https://github.com/Amanda-Correa2003/Solarium-Resort.git)
+```bash
+git clone [https://github.com/Amanda-Correa2003/solarium-resort.git](https://github.com/Amanda-Correa2003/solarium-resort.git)
+
+```
+
 
 2. Entre na pasta do projeto:
-cd Solarium-Resort
+```bash
+cd solarium-resort
+
+```
+
 
 3. Instale as dependências:
+```bash
 npm install
 
+```
+
+
 4. Inicie o servidor de desenvolvimento:
+```bash
 npm run dev
 
-5. Abra o link gerado no terminal (geralmente http://localhost:5173) no seu navegador.
+```
 
-Próximos Passos do projeto!
-[ ] Integração completa com o Backend (API).
-[ ] Sistema de reservas em tempo real.
-[ ] Painel administrativo.
 
+5. Acesse no navegador:
+Abra o link fornecido no terminal (geralmente `http://localhost:5173`)
+
+Desenvolvida por:
+
+Amanda Corrêa Machado
+GitHub: [Amanda-Correa2003](https://github.com/Amanda-Correa2003)
+LinkedIn: [Amanda Corrêa Machado](https://www.google.com/search?q=https://www.linkedin.com/in/amanda-corr%25C3%25Aap-machado-72a525258/)
+
+```
+
+```
