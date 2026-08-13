@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Home } from './pages/Home';
-import { QuartosPage } from './pages/Rooms';
+import { Rooms as QuartosPage } from './pages/Rooms';
 import { CarrinhoPage } from './pages/CarrinhoPage';
 
 const queryClient = new QueryClient();
