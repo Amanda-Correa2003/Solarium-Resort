@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
+import { Header } from '../components/Header';
 import { Users, Check, Calendar, Tag, DollarSign, ArrowLeft, X } from 'lucide-react';
 import { CardCarrossel } from '../components/CardCarrossel';
 import { NavbarQuartos } from '../components/NavbarQuartos';
@@ -187,13 +188,8 @@ export function Rooms() {
   return (
     <div className="bg-[#e4e1bd] min-h-screen text-[#1a2b4c] font-sans relative overflow-x-hidden flex flex-col justify-between">
       <div>
-        <NavbarQuartos 
-          chegada={chegada} setChegada={setChegada}
-          saida={saida} setSaida={setSaida}
-          pessoas={pessoas} setPessoas={setPessoas}
-          precoMax={precoMax} setPrecoMax={setPrecoMax}
-          onBuscar={handleNovaBusca}
-        />
+        <Header />
+      
 
         <main className="max-w-7xl mx-auto px-6 py-10">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
