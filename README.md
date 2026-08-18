@@ -12,8 +12,8 @@ Imagens
 <img width="2560" height="4558" alt="localhost_5173_(Nest Hub Max) (20)" src="https://github.com/user-attachments/assets/70a44e94-c998-48cf-ac04-a6ef5d83c294" />
 
 
+<img width="2560" height="3626" alt="localhost_5173_quartos(Nest Hub Max) (2)" src="https://github.com/user-attachments/assets/874ba8ca-9bcf-4a73-a737-d5602c5f281a" />
 
-<img width="2560" height="3646" alt="localhost_5173_quartos(Nest Hub Max) (1)" src="https://github.com/user-attachments/assets/52b054f1-fbc1-4bc1-a6bd-be02db237c35" />
 
 
 
