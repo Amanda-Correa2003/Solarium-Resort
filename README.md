@@ -2,6 +2,8 @@ Solarium Resort — Sistema de Reservas
 
 Aplicação web desenvolvida com React, TypeScript e Tailwind CSS para simular a experiência de um hóspede buscando e reservando acomodações de luxo em um resort de alto padrão.
 
+link o projeto no vercel: https://solarium-resort.vercel.app/
+
 O Projeto
 
 O Solarium Resort permite navegar por quartos exclusivos, configurar datas de estadia, gerenciar hóspedes e simular o fluxo completo de uma reserva através de um carrinho de compras.
